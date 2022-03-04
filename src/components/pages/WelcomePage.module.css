@@ -1,0 +1,67 @@
+.main {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  background-image: url("../../assets/stars.png");
+}
+
+.welcome {
+  position: absolute;
+  width: 1090px;
+  height: 212px;
+  left: 434px;
+  top: 175px;
+  font-family: Rowdies;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 119px;
+  text-align: center;
+  color: #fe3b1f;
+}
+
+.start {
+  position: absolute;
+  width: 395px;
+  height: 79px;
+  left: 754px;
+  top: 492px;
+  background: #fe3b1f;
+  border-radius: 50px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+a {
+  position: absolute;
+  width: 338px;
+  height: 66px;
+  left: 845px;
+  top: 589px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.rocketman {
+  position: absolute;
+  width: 409.92px;
+  height: 372.45px;
+  left: 740px;
+  top: 670px;
+}

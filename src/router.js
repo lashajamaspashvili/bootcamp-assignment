@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 
-import PersonalInfoPage from './pages/PersonalInfoPage';
-import TechnicalIssuesPage from './pages/TechnicalIssuesPage';
-import CovidPage from './pages/CovidPage';
-import RedberryInternalPage from './pages/RedberryInternalPage';
-import SubmitPage from './pages/SubmitPage';
+import PersonalInfoPage from './components/pages/PersonalInfoPage';
+import TechnicalIssuesPage from './components/pages/TechnicalIssuesPage';
+import CovidPage from './components/pages/CovidPage';
+import RedberryInternalPage from './components/pages/RedberryInternalPage';
+import SubmitPage from './components/pages/SubmitPage';
 
 const routes = [
   {
