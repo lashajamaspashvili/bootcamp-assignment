@@ -19,17 +19,17 @@ const routes = [
   },
   {
     id: 3,
-    path: "/technical-issues",
+    path: "/covid",
     element: <CovidPage />,
   },
   {
     id: 4,
-    path: "/technical-issues",
+    path: "/redberry-internal",
     element: <RedberryInternalPage />,
   },
   {
     id: 5,
-    path: "/technical-issues",
+    path: "/submit",
     element: <SubmitPage />,
   },
 ];
