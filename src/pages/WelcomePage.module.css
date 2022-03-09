@@ -5,7 +5,7 @@
   left: 0px;
   top: 0px;
   background-color: black;
-  background-image: url("../../assets/stars.png");
+  background-image: url("../assets/stars.png");
 }
 
 .welcome {
@@ -29,6 +29,7 @@
   height: 79px;
   left: 754px;
   top: 492px;
+  padding-top: 20px;
   background: #fe3b1f;
   border-radius: 50px;
   font-family: Montserrat;
@@ -36,15 +37,18 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  text-decoration: none;
   color: #ffffff;
 }
 
-a {
+.submitted {
   position: absolute;
   width: 338px;
   height: 66px;
-  left: 845px;
+  left: 815px;
   top: 589px;
   font-family: Montserrat;
   font-style: normal;
@@ -54,7 +58,7 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: #ffffff;
 }
 
@@ -64,4 +68,9 @@ a {
   height: 372.45px;
   left: 740px;
   top: 670px;
+}
+
+.start:hover,
+.submitted:hover {
+  color: white;
 }

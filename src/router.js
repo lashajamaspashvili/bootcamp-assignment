@@ -1,12 +1,18 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import PersonalInfoPage from './components/pages/PersonalInfoPage';
-import TechnicalIssuesPage from './components/pages/TechnicalIssuesPage';
-import CovidPage from './components/pages/CovidPage';
-import RedberryInternalPage from './components/pages/RedberryInternalPage';
-import SubmitPage from './components/pages/SubmitPage';
+import PersonalInfoPage from "./pages/PersonalInfoPage";
+import TechnicalIssuesPage from "./pages/TechnicalIssuesPage";
+import CovidPage from "./pages/CovidPage";
+import RedberryInternalPage from "./pages/RedberryInternalPage";
+import SubmitPage from "./pages/SubmitPage";
+import WelcomePage from "./pages/WelcomePage";
 
 const routes = [
+  {
+    id: 0,
+    path: "/",
+    element: <Navigate to="/welcome" replace={true} />,
+  },
   {
     id: 1,
     path: "/personal-info",
@@ -32,20 +38,21 @@ const routes = [
     path: "/submit",
     element: <SubmitPage />,
   },
+  {
+    id: 6,
+    path: "/welcome",
+    element: <WelcomePage />,
+  },
 ];
-
-
-
 
 const AppRouter = () => {
   return (
     <Routes>
-      {
-        routes.map(route => <Route key={route.id} {...route} />)
-      }
+      {routes.map((route) => (
+        <Route key={route.id} {...route} />
+      ))}
     </Routes>
-  )
-}
-
+  );
+};
 
 export default AppRouter;
