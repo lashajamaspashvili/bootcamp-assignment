@@ -2,6 +2,8 @@ import { useState, createContext } from "react";
 
 export const FormContext = createContext({
   personalInfo: {},
+  mySkills: [],
+  newPath: "",
   updated: "false",
 });
 
@@ -13,12 +15,16 @@ const FormContextProvider = ({ children }) => {
     phone: "",
   });
 
+  const [mySkills, setMySkills] = useState([]);
+
   const [updated, setUpdated] = useState(false);
 
   const updatePersonalInfoHandler = (data) => {
     setPersonalInfo({ ...data });
     setUpdated(true);
   };
+
+  const updateMySkillsHandler = (skillsArr) => setMySkills(skillsArr);
 
   const resetUpdate = () => {
     console.log("Reset");
@@ -27,6 +33,8 @@ const FormContextProvider = ({ children }) => {
 
   const value = {
     personalInfo,
+    mySkills,
+    updateMySkillsHandler,
     updated,
     resetUpdate,
     updatePersonalInfoHandler,

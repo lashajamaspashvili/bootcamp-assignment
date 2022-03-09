@@ -1,0 +1,75 @@
+.button {
+  position: absolute;
+  width: 201px;
+  height: 32px;
+  margin-top: 20px;
+  margin-left: 254px;
+  background: #fe3b1f;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.skillsContainer {
+  margin-top: 130px;
+}
+
+.skill {
+  position: relative;
+  width: 455px;
+  height: 48px;
+  margin-top: 25px;
+  background: #ffffff;
+  border: 1px solid #525557;
+  box-sizing: border-box;
+}
+
+.language {
+  position: absolute;
+  width: 49px;
+  height: 26px;
+  left: 17px;
+  top: 15px;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.years {
+  position: absolute;
+  width: 175px;
+  height: 23px;
+  left: 101px;
+  top: 15px;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.remove {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 415px;
+  top: 14px;
+  background: red;
+  border-radius: 50%;
+}
